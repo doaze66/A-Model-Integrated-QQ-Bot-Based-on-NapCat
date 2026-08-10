@@ -1,0 +1,12 @@
+@echo off
+set LOG=%TEMP%\napcat_boot.log
+echo [%date% %time%] boot start >> "%LOG%"
+set NAPCAT_PATCH_PACKAGE=__NAPCAT_DIR__\qqnt.json
+set NAPCAT_LOAD_PATH=__NAPCAT_DIR__\loadNapCat.js
+set NAPCAT_INJECT_PATH=__NAPCAT_DIR__\NapCatWinBootHook.dll
+set NAPCAT_LAUNCHER_PATH=__NAPCAT_DIR__\NapCatWinBootMain.exe
+set NAPCAT_MAIN_PATH=__NAPCAT_DIR__\napcat.mjs
+cd /d __NAPCAT_DIR__
+echo [%date% %time%] launching injector >> "%LOG%"
+"__NAPCAT_DIR__\NapCatWinBootMain.exe" "C:\Program Files\Tencent\QQNT\QQ.exe" "__NAPCAT_DIR__\NapCatWinBootHook.dll" >> "%LOG%" 2>&1
+echo [%date% %time%] injector exit code %ERRORLEVEL% >> "%LOG%"
