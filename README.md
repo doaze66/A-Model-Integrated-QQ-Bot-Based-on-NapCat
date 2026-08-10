@@ -1,5 +1,5 @@
 # 使用说明
-第一步:检查电脑上是否有qq应用，确保其版本不高于9.9.26（高于此版本的qq会导致napcat协议错误，机器人就无法生效)，版本过高请去"https://rodert.github.io/qq-versions/"下载历史版本
+第一步:检查电脑上是否有qq应用，确保其版本不高于9.9.26（高于此版本的qq会导致napcat协议错误，机器人就无法生效)，版本过高请去以下网站下载历史版本"https://rodert.github.io/qq-versions/"
 
 第二步:点击github仓库界面的绿色code按钮，在子菜单选择download zip下载整个仓库并完成解压
 
